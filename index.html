@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Anita,</h1>
+        <p>I have something to tell you...</p>
+        <button onclick="revealMessage()">Click me!</button>
+        <div id="message" class="hidden">
+            <p>You are amazing, and I'd love to get to know you better! 💖</p>
+        </div>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('message').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
